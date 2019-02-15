@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #1230b6;
+}
+
+img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+.wrap .content {
+  margin: 50px;
+}
+
+.wrap .content .head {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.wrap .content .head .title > * {
+  margin-bottom: 10px;
+}
+
+.wrap .content .head .img {
+  margin-top: 30px;
+}
+
+.wrap .content .body {
+  padding-bottom: 40px;
+}
+
+.wrap .content .body .item {
+  margin: 30px;
+  height: 320px;
+  position: relative;
+}
+
+.wrap .content .body .item .item-left {
+  position: absolute;
+}
+
+.wrap .content .body .item .item-left .title {
+  padding: 0 20px 20px;
+}
+
+.wrap .content .body .item .item-left .pic {
+  width: 300px;
+}
+
+.wrap .content .body .item .item-right {
+  position: absolute;
+  margin-left: 320px;
+  margin-top: 50px;
+}
+
+.wrap .content .body .item .item-right .subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.wrap .content .body .item .item-right .desc {
+  line-height: 26px;
+}
+
+.wrap .content .body .item .link {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+}
+
+.footer {
+  background-color: #ddd;
+  line-height: 50px;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
