@@ -23,6 +23,9 @@ img {
   width: 90%;
   margin: 0 auto;
 }
+li {
+  list-style: none;
+}
 .wrap {
   max-width: 1024px;
   margin: 0 auto;
@@ -41,39 +44,71 @@ img {
     }
     .body {
       padding-bottom: 40px;
-      .item {
-        margin: 30px;
-        height: 320px;
-        position: relative;
-        .item-left {
-          position: absolute;
-          .title {
-            padding: 0 20px 20px;
-          }
-          .pic {
-            width: 300px;
-          }
-        }
-        .item-right {
-          position: absolute;
-          margin-left: 320px;
-          margin-top: 50px;
-          .subtitle {
-            font-size: 18px;
-            font-weight: bold;
+      margin-top: 40px; 
+      .title-s {
+        font-size: 22px;
+        color: #888;
+        .season {
+          height: 40px;
+          width: 300px;
+          margin-left: 40px;
+          z-index: 1;
+          .sea {
+            float: left;
+            width: 140px;
             text-align: center;
-            margin: 20px 0;
+            height: 38px;
+            border: 2px solid #999;
+            margin-left: -2px;
+            &:hover {
+              cursor: pointer;
+            }
           }
-          .desc {
-            line-height: 26px;
-          } 
-        }
-        .link {
-          position: absolute;
-          right: 20px;
-          bottom: 5px;
+          .active {
+            color: #444;
+            border-bottom-color: #ccc;
+          }
         }
       }
+      .items {
+        border-top: 2px solid #999;
+        margin-top: -4px;
+        z-index: 0;
+        .item {
+          margin: 30px;
+          height: 320px;
+          position: relative;
+          .item-left {
+            position: absolute;
+            .title {
+              padding: 0 20px 20px;
+            }
+            .pic {
+              width: 300px;
+            }
+          }
+          .item-right {
+            position: absolute;
+            margin-left: 320px;
+            margin-top: 50px;
+            .subtitle {
+              font-size: 18px;
+              font-weight: bold;
+              text-align: center;
+              margin: 20px 0;
+            }
+            .desc {
+              line-height: 26px;
+              text-indent: 2em;
+            } 
+          }
+          .link {
+            position: absolute;
+            right: 20px;
+            bottom: 5px;
+          }
+        }
+      }  
     }
   }
 }

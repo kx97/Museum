@@ -27,6 +27,10 @@ img {
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 .wrap {
   max-width: 1024px;
   margin: 0 auto;
@@ -52,44 +56,82 @@ img {
 
 .wrap .content .body {
   padding-bottom: 40px;
+  margin-top: 40px;
 }
 
-.wrap .content .body .item {
+.wrap .content .body .title-s {
+  font-size: 22px;
+  color: #888;
+}
+
+.wrap .content .body .title-s .season {
+  height: 40px;
+  width: 300px;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+.wrap .content .body .title-s .season .sea {
+  float: left;
+  width: 140px;
+  text-align: center;
+  height: 38px;
+  border: 2px solid #999;
+  margin-left: -2px;
+}
+
+.wrap .content .body .title-s .season .sea:hover {
+  cursor: pointer;
+}
+
+.wrap .content .body .title-s .season .active {
+  color: #444;
+  border-bottom-color: #ccc;
+}
+
+.wrap .content .body .items {
+  border-top: 2px solid #999;
+  margin-top: -4px;
+  z-index: 0;
+}
+
+.wrap .content .body .items .item {
   margin: 30px;
   height: 320px;
   position: relative;
 }
 
-.wrap .content .body .item .item-left {
+.wrap .content .body .items .item .item-left {
   position: absolute;
 }
 
-.wrap .content .body .item .item-left .title {
+.wrap .content .body .items .item .item-left .title {
   padding: 0 20px 20px;
 }
 
-.wrap .content .body .item .item-left .pic {
+.wrap .content .body .items .item .item-left .pic {
   width: 300px;
 }
 
-.wrap .content .body .item .item-right {
+.wrap .content .body .items .item .item-right {
   position: absolute;
   margin-left: 320px;
   margin-top: 50px;
 }
 
-.wrap .content .body .item .item-right .subtitle {
+.wrap .content .body .items .item .item-right .subtitle {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
   margin: 20px 0;
 }
 
-.wrap .content .body .item .item-right .desc {
+.wrap .content .body .items .item .item-right .desc {
   line-height: 26px;
+  text-indent: 2em;
 }
 
-.wrap .content .body .item .link {
+.wrap .content .body .items .item .link {
   position: absolute;
   right: 20px;
   bottom: 5px;
