@@ -2,11 +2,26 @@ document.ready(function(e) {
   var itemlist = document.querySelector('#items');
   show(items1, itemlist);
   var list = document.querySelectorAll('.sea');
-  for(var i = 0; i < list.length; i++) {
-    list[i].onclick = function(e) {
+  change(list, itemlist);
+  
+  // 判断鼠标是否滑动
+  window.onscroll = function() {
+    var scrollH = document.documentElement.scrollTop || document.body.scrollTop; 
+    var box = document.getElementById('box');
+    if(scrollH > 0) {
+      box.style.display = 'block';
+    } else {
+      box.style.display = 'none';
+    }
+  }
+});
+// 改变季数时改变显示内容
+function change(element, itemlist) {
+  for(var i = 0; i < element.length; i++) {
+    element[i].onclick = function(e) {
       var tabid = this.getAttribute('tabid');
-      for(var j = 0; j < list.length; j++) {
-        list[j].className = 'sea';
+      for(var j = 0; j < element.length; j++) {
+        element[j].className = 'sea';
       }
       this.className += " active";
       switch(tabid) {
@@ -20,10 +35,8 @@ document.ready(function(e) {
         break;
       }
     }
-  }
-  
-});
-
+}
+}
 // 定义添加HTML的函数
   function show(items, element) {
     for(var i = 0; i < items.length; i++) {
