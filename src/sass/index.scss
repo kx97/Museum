@@ -78,6 +78,7 @@ li {
           z-index: 0;
           .item {
             margin: 30px;
+            padding-top: 10px; 
             height: 320px;
             position: relative;
             .item-left {
@@ -126,15 +127,36 @@ li {
 }
 .box {
   position: fixed;
-  top: 560px;
-  right: 20px;
-  display: none;
-  opacity: 0.7;
-  i {
-    font-size: 50px;
-    color: #444;
+  top: 150px;
+  right: 10px;
+  .box-list {
+    margin-bottom: 120px;
+    .list-item {
+      a {
+        width: 30px;
+        display: block;
+        // border: 1x solid #ccc;
+        text-align: center;
+        margin: 10px auto;
+        border-radius: 50%;
+        color: #999;
+        &:hover {
+          color: #444;
+        }
+      }
+    }
   }
-  &:hover {
-    opacity: 1;
+  .box-backtop {
+    width: 60px;
+    display: none;
+    opacity: 0.7;
+    margin: 0 auto;
+    i {
+      font-size: 50px;
+      color: #444;
+    }
+    &:hover {
+      opacity: 1;
+    }
   }
 }

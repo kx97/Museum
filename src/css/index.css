@@ -98,6 +98,7 @@ li {
 
 .container .content-wrap .content .body .items .item {
   margin: 30px;
+  padding-top: 10px;
   height: 320px;
   position: relative;
 }
@@ -148,17 +149,39 @@ li {
 
 .box {
   position: fixed;
-  top: 560px;
-  right: 20px;
-  display: none;
-  opacity: 0.7;
+  top: 150px;
+  right: 10px;
 }
 
-.box i {
+.box .box-list {
+  margin-bottom: 120px;
+}
+
+.box .box-list .list-item a {
+  width: 30px;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 50%;
+  color: #999;
+}
+
+.box .box-list .list-item a:hover {
+  color: #444;
+}
+
+.box .box-backtop {
+  width: 60px;
+  display: none;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+
+.box .box-backtop i {
   font-size: 50px;
   color: #444;
 }
 
-.box:hover {
+.box .box-backtop:hover {
   opacity: 1;
 }
