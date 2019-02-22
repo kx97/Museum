@@ -31,47 +31,47 @@ li {
   list-style: none;
 }
 
-.container .content-wrap {
+.container {
   max-width: 1024px;
   margin: 0 auto;
   background-color: #ccc;
 }
 
-.container .content-wrap .content {
+.container .content {
   margin: 50px;
 }
 
-.container .content-wrap .content .head {
+.container .content .head {
   text-align: center;
   padding: 30px 20px;
 }
 
-.container .content-wrap .content .head .title > * {
+.container .content .head .title > * {
   margin-bottom: 10px;
 }
 
-.container .content-wrap .content .head .img {
+.container .content .head .img {
   margin-top: 30px;
 }
 
-.container .content-wrap .content .body {
+.container .content .body {
   padding-bottom: 40px;
   margin-top: 40px;
 }
 
-.container .content-wrap .content .body .title-s {
+.container .content .body .title-s {
   font-size: 22px;
   color: #888;
 }
 
-.container .content-wrap .content .body .title-s .season {
+.container .content .body .title-s .season {
   height: 40px;
   width: 300px;
   margin-left: 40px;
   z-index: 1;
 }
 
-.container .content-wrap .content .body .title-s .season .sea {
+.container .content .body .title-s .season .sea {
   float: left;
   width: 140px;
   text-align: center;
@@ -80,60 +80,60 @@ li {
   margin-left: -2px;
 }
 
-.container .content-wrap .content .body .title-s .season .sea:hover {
+.container .content .body .title-s .season .sea:hover {
   cursor: pointer;
   color: #444;
 }
 
-.container .content-wrap .content .body .title-s .season .active {
+.container .content .body .title-s .season .active {
   color: #444;
   border-bottom-color: #ccc;
 }
 
-.container .content-wrap .content .body .items {
+.container .content .body .items {
   border-top: 2px solid #999;
   margin-top: -4px;
   z-index: 0;
 }
 
-.container .content-wrap .content .body .items .item {
+.container .content .body .items .item {
   margin: 30px;
   padding-top: 10px;
   height: 320px;
   position: relative;
 }
 
-.container .content-wrap .content .body .items .item .item-left {
+.container .content .body .items .item .item-left {
   position: absolute;
 }
 
-.container .content-wrap .content .body .items .item .item-left .title {
+.container .content .body .items .item .item-left .title {
   padding: 0 20px 20px;
 }
 
-.container .content-wrap .content .body .items .item .item-left .pic {
+.container .content .body .items .item .item-left .pic {
   width: 300px;
 }
 
-.container .content-wrap .content .body .items .item .item-right {
+.container .content .body .items .item .item-right {
   position: absolute;
   margin-left: 320px;
   margin-top: 42px;
 }
 
-.container .content-wrap .content .body .items .item .item-right .subtitle {
+.container .content .body .items .item .item-right .subtitle {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
   margin: 20px 0;
 }
 
-.container .content-wrap .content .body .items .item .item-right .desc {
+.container .content .body .items .item .item-right .desc {
   line-height: 26px;
   text-indent: 2em;
 }
 
-.container .content-wrap .content .body .items .item .link {
+.container .content .body .items .item .link {
   position: absolute;
   right: 20px;
   bottom: 5px;
@@ -149,32 +149,45 @@ li {
 
 .box {
   position: fixed;
-  top: 150px;
+  top: 120px;
   right: 10px;
 }
 
 .box .box-list {
-  margin-bottom: 120px;
+  margin-bottom: 140px;
+}
+
+.box .box-list .list-item {
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.box .box-list .list-item p {
+  float: right;
+  display: none;
+  color: #555;
 }
 
 .box .box-list .list-item a {
-  width: 30px;
   display: block;
-  text-align: center;
-  margin: 10px auto;
+  float: right;
+  width: 10px;
+  height: 10px;
+  margin: 6px 8px;
   border-radius: 50%;
-  color: #999;
+  background-color: #bbb;
 }
 
 .box .box-list .list-item a:hover {
-  color: #444;
+  background: #444;
 }
 
 .box .box-backtop {
+  position: absolute;
+  right: 0px;
   width: 60px;
   display: none;
   opacity: 0.7;
-  margin: 0 auto;
 }
 
 .box .box-backtop i {

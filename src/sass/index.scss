@@ -27,7 +27,6 @@ li {
   list-style: none;
 }
 .container{
-  .content-wrap {
     max-width: 1024px;
     margin: 0 auto;
     background-color: #ccc;
@@ -115,7 +114,6 @@ li {
       }
     }
   }
-}
 
 
 .footer {
@@ -127,30 +125,41 @@ li {
 }
 .box {
   position: fixed;
-  top: 150px;
+  top: 120px;
   right: 10px;
   .box-list {
-    margin-bottom: 120px;
+    margin-bottom: 140px;
     .list-item {
+      margin: 10px auto;
+      overflow: hidden;
+      // text-align: right;
+      p {
+        float: right;
+        display: none;
+        color: #555;
+      }
       a {
-        width: 30px;
         display: block;
-        // border: 1x solid #ccc;
-        text-align: center;
-        margin: 10px auto;
+        float: right;
+        width: 10px;
+        height: 10px;
+        margin: 6px 8px;
         border-radius: 50%;
-        color: #999;
+        background-color: #bbb;
         &:hover {
-          color: #444;
+          background: #444;
         }
       }
     }
   }
   .box-backtop {
+    position: absolute;
+    right: 0px;
     width: 60px;
     display: none;
     opacity: 0.7;
-    margin: 0 auto;
+
+    // margin: 0 auto;
     i {
       font-size: 50px;
       color: #444;

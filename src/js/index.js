@@ -14,7 +14,19 @@ document.ready(function(e) {
       backtop.style.display = 'none';
     }
   }
+  var pitems = document.querySelectorAll(".box .box-list .list li p");
+  var aitems = document.querySelectorAll(".box .box-list .list li a");
+  for(let i = 0; i < aitems.length; i++) {
+    aitems[i].onmouseenter = function() {
+      pitems[i].style.display = 'block';
+    }; 
+    aitems[i].onmouseleave = function() {
+      for(var j = 0; j < aitems.length; j++) {
+        pitems[j].style.display = 'none';
+      }
+    }
 
+}
 
 });
 // 改变季数时改变显示内容
@@ -41,7 +53,7 @@ function change(element, itemlist) {
 }
 // 定义添加HTML的函数
   function show(items, element) {
-  var atitle = document.querySelectorAll(".box .box-list .list a");
+  
     for(var i = 0; i < items.length; i++) {
       var str = '';
       str += '<div class="item" id="item'+ i +'">';
@@ -63,6 +75,8 @@ function change(element, itemlist) {
       str += '</div>';
       str += '<hr>';
       element.innerHTML += str;
-      atitle[i].title = items[i].name;
+
+      var pitems = document.querySelectorAll(".box .box-list .list li p");
+      pitems[i].innerHTML = items[i].name;
     }  
   }
