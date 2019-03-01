@@ -123,6 +123,7 @@ li {
   margin: 0 auto;
   text-align: center;
 }
+// 跳转盒子
 .box {
   position: fixed;
   top: 120px;
@@ -167,5 +168,47 @@ li {
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+// 模态框
+.modal {
+//  position: absolute;
+  display: none;
+  overflow: hidden;
+  .modal-close {
+    position: absolute;
+    // top: 30px;
+    right: 80px;
+    font-size: 40px;
+    z-index: 100;
+    color: #eee;
+    opacity: 0.6;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .modal-content {
+    $wd: 400px;
+    position: absolute;
+    width: $wd;
+    height: $wd;
+    // top: 50%;
+    left: 50%;
+    z-index: 100;
+    // margin-top: -$wd/2;
+    margin-left: -$wd/2 
+  }
+  .modal-cover {
+    position: absolute;
+    // top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #999;
+    opacity: 0.9;
+    z-index: 10;
   }
 }

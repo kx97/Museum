@@ -198,3 +198,42 @@ li {
 .box .box-backtop:hover {
   opacity: 1;
 }
+
+.modal {
+  display: none;
+  overflow: hidden;
+}
+
+.modal .modal-close {
+  position: absolute;
+  right: 80px;
+  font-size: 40px;
+  z-index: 100;
+  color: #eee;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.modal .modal-close:hover {
+  opacity: 1;
+}
+
+.modal .modal-content {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 50%;
+  z-index: 100;
+  margin-left: -200px;
+}
+
+.modal .modal-cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #999;
+  opacity: 0.9;
+  z-index: 10;
+}
