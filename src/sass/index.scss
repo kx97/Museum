@@ -87,6 +87,10 @@ li {
               }
               .pic {
                 width: 300px;
+                cursor: pointer;
+                &:hover {
+                  opacity: 0.8;
+                }
               }
             }
             .item-right {

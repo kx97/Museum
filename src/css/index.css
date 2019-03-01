@@ -113,6 +113,11 @@ li {
 
 .container .content .body .items .item .item-left .pic {
   width: 300px;
+  cursor: pointer;
+}
+
+.container .content .body .items .item .item-left .pic:hover {
+  opacity: 0.8;
 }
 
 .container .content .body .items .item .item-right {
