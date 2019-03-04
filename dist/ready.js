@@ -1,1 +1,0 @@
-"use strict";document.ready=function(e){document.addEventListener?document.addEventListener("DOMContentLoaded",e,!1):document.attachEvent("onreadystatechange",function(){"interactive"==document.readyState&&e(window.event)})};
