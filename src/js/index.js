@@ -1,3 +1,5 @@
+
+
 document.ready(function(e) {
   var itemlist = document.querySelector('#items');
   show(items1, itemlist);
@@ -27,7 +29,6 @@ document.ready(function(e) {
       }
     }
 }
-
 });
 // 改变季数时改变显示内容
 function change(element, itemlist) {
@@ -51,7 +52,7 @@ function change(element, itemlist) {
         break;
       }
     }
-}
+  }
 }
 // 定义添加HTML的函数
   function show(items, element) {
